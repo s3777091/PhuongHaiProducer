@@ -8,9 +8,9 @@ services:
     volumes:
       - ./pgdata:/var/lib/postgresql/data
     environment:
-      - POSTGRES_USER=kiadmin
-      - POSTGRES_PASSWORD=07998883581234
-      - POSTGRES_DB=kishopTest
+      - POSTGRES_USER=phuonghai_admin
+      - POSTGRES_PASSWORD=0799888358
+      - POSTGRES_DB=phuonghaiTest
   zoo1:
     image: zookeeper:3.4.9
     hostname: zoo1
@@ -40,7 +40,3 @@ services:
       - ./zk-single-kafka-single/kafka1/data:/var/lib/kafka/data
     depends_on:
       - zoo1
-  redis:
-    image: redis
-    ports:
-      - "6379:6379"
