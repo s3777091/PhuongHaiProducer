@@ -8,9 +8,9 @@ services:
     volumes:
       - ./pgdata:/var/lib/postgresql/data
     environment:
-      - POSTGRES_USER=ki_admin
-      - POSTGRES_PASSWORD=0799888358
-      - POSTGRES_DB=kishop
+      - POSTGRES_USER=kiadmin
+      - POSTGRES_PASSWORD=07998883581234
+      - POSTGRES_DB=kishopTest
   zoo1:
     image: zookeeper:3.4.9
     hostname: zoo1
